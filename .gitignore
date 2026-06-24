@@ -1,0 +1,22 @@
+# Secrets — never commit
+.env
+
+# Call artifacts
+calls/
+*.wav
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
