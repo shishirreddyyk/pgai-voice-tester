@@ -5,3 +5,4 @@ twilio
 python-dotenv
 openai
 pydantic
+certifi
