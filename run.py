@@ -31,10 +31,31 @@ def main() -> None:
 
     # Imported here so --help works without a fully populated .env.
     from src.caller import place_call
+    from src.capture import capture_call
+    from src.realtime import SCENARIO_NAME
 
     sid = place_call()
     print(f"Call placed: {sid}")
     print("Make sure `uvicorn src.server:app --port 8000` and ngrok are running.")
+    print("Waiting for the call to finish, then pulling recording + transcript...")
+
+    result = capture_call(sid, SCENARIO_NAME)
+    if not result:
+        print("No recording was captured — check the Twilio console.")
+        return
+
+    print(f"\nRecording:  {result['mp3']}")
+    if "mapping" in result:
+        m = result["mapping"]
+        print(f"Transcript: {result['txt']}")
+        print(
+            f"\nChannel mapping → AGENT={m['agent_channel']}, "
+            f"PATIENT={m['patient_channel']} "
+            f"(first speech at {m['first_speech_s']:.2f}s = the AGENT greeting)"
+        )
+        print("Confirm by ear that AGENT/PATIENT didn't invert.")
+    else:
+        print("Transcript step failed; the recording above is still saved.")
 
 
 if __name__ == "__main__":

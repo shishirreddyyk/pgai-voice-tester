@@ -33,6 +33,10 @@ REALTIME_URL = "wss://api.openai.com/v1/realtime?model={model}"
 # and wreck turn-taking. One goal, brief natural turns, listen-first, exit when
 # done. (The scenario suite arrives in Phase 3.)
 # ---------------------------------------------------------------------------
+# Short slug for the active scenario, used in capture filenames
+# (calls/call-NN-<scenario>.{mp3,txt}). The scenario suite arrives in Phase 3.
+SCENARIO_NAME = "newpatient"
+
 PATIENT_INSTRUCTIONS = """\
 You are a patient calling a medical practice to book a new appointment. Your \
 name is Jordan Avery. You want the earliest available appointment with a \

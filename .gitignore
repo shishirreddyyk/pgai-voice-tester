@@ -1,8 +1,8 @@
 # Secrets — never commit
 .env
 
-# Call artifacts
-calls/
+# Call artifacts — recordings + transcripts in calls/ are committed deliverables.
+# Only scratch WAVs (temp channel splits) are ignored.
 *.wav
 
 # Python
