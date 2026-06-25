@@ -1,0 +1,33 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi, no, this is Morgan Ellis. I'm calling to make an appointment.
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics,
+[00:08] AGENT: part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:20] AGENT: Please provide the full name and date of birth
+[00:22] AGENT: of the patient needing the appointment.
+[00:25] PATIENT: Sure. The full name is Morgan Ellis, and my date of birth is April 12, 1985.
+[00:30] AGENT: Just to confirm, I have your name as Morgan Ellis
+[00:37] AGENT: and your date of birth as April 12th, 1985.
+[00:40] AGENT: Is that correct?
+[00:41] AGENT: If so, please spell your first and last name for me.
+[00:45] PATIENT: Yes, that's correct. It's M-O-R-G-A-N for the first name and E-L-L-I-S for the last name.
+[00:57] AGENT: Would you like to use your phone number to look up your record?
+[01:00] AGENT: If so, please provide the number you have on file with us.
+[01:02] AGENT: If you're not sure, I can confirm your name
+[01:05] AGENT: and date of birth again.
+[01:06] AGENT: Let me know how you'd like to proceed.
+[01:10] PATIENT: I can give you the number. It's 940-555-2781.
+[01:19] AGENT: I have your phone number as 940-555-2781
+[01:25] AGENT: and your date of birth as April 12th, 1985.
+[01:29] AGENT: Is that correct?
+[01:32] PATIENT: Yes, that's correct.
+[01:37] AGENT: I can't schedule an appointment right now,
+[01:39] AGENT: but I can connect you to our patient support team.
+[01:42] AGENT: Please stay on the line while I transfer your call.
+[01:45] AGENT: Connecting you to a representative.
+[01:47] AGENT: Please wait.
+[01:49] AGENT: Hello, you've reached the Pretty Good AI test line.
+[01:50] PATIENT: Hi, I think there might be some confusion. I'm just trying to book an appointment. Could you help me with that?
+[01:52] AGENT: Goodbye.
+[01:55] AGENT: Thank you.

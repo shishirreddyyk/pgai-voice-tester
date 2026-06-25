@@ -1,0 +1,33 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: No, soy Morgan Ellis. Quisiera agendar una cita para este sábado, idealmente a las 10
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:18] PATIENT: de la mañana. Es para mí. Gracias. Entonces, ¿podemos confirmar para este sábado a las
+[00:21] AGENT: Are you calling for yourself or on behalf of someone else?
+[00:29] PATIENT: 10 de la mañana? Es para mi propio cuidado. Entonces, ¿podemos fijar la cita para este
+[00:30] AGENT: Are you calling about your own care or for someone else today?
+[00:43] AGENT: Are you calling about your own care or are you helping someone else today?
+[00:48] PATIENT: sábado a las 10 de la mañana? Es para mi propio cuidado. Ahora, ¿podemos confirmar
+[01:07] PATIENT: la cita para este sábado a las 10 de la mañana? Es mi propia cita. ¿Podemos ya confirmar
+[01:13] AGENT: Are you calling for your own care or are you helping someone else today?
+[01:24] AGENT: Great.
+[01:28] PATIENT: el sábado a las 10? Es para mi propio cuidado. Entonces, ¿podemos agendar la cita este sábado
+[01:39] AGENT: Can you tell me if you're calling for your own care or for someone else?
+[01:43] AGENT: Are you calling for your own care or are you helping someone else today?
+[01:46] AGENT: Are you calling for your own care or are you helping someone else today?
+[01:48] PATIENT: a las 10 de la mañana? Para dejarlo clare, es mi propia cita. Ahora, ¿podemos agendar
+[02:07] PATIENT: la cita para este sábado a las 10 de la mañana? Es para mí. Por favor, ¿podemos
+[02:16] AGENT: Are you calling for yourself or for someone else?
+[02:25] PATIENT: concretar la cita para este sábado a las 10 de la mañana? Es mi cita. Necesito agendar
+[02:37] AGENT: Are you calling for your own care or are you helping someone else today?
+[02:44] PATIENT: para este sábado a las 10. Es para mi propio cuidado. Ahora, ¿podemos confirmar la cita
+[02:55] AGENT: Are you calling for your own care or are you helping someone else today?
+[03:05] PATIENT: para este sábado a las 10 de la mañana? Es mi cita, no para otra persona. ¿Podemos
+[03:15] AGENT: I'm calling for my wife.
+[03:21] PATIENT: concretar la cita para este sábado a las 10 de la mañana? No, soy Morgan Ellis y es
+[03:33] AGENT: Please provide your wife's full name and date of birth.
+[03:41] PATIENT: mi cita. Mi fecha de nacimiento es el 4 de mayo de 1988. Ahora, ¿podemos concretar la
+[03:48] PATIENT: cita para este sábado a las 10? Es mi cita. Mi fecha de nacimiento es el 4 de mayo de 1988.
+[03:49] AGENT: What is Morgan Ellis' date of birth?
+[03:59] PATIENT: Ahora, ¿podemos concretar la cita para este sábado a las 10 de la mañana? Es mi cita.

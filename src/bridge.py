@@ -21,7 +21,7 @@ import logging
 import websockets
 from fastapi import WebSocket, WebSocketDisconnect
 
-from . import realtime
+from . import realtime, scenarios
 
 logger = logging.getLogger("bridge")
 
@@ -30,15 +30,50 @@ logger = logging.getLogger("bridge")
 MAX_CALL_SECONDS = 240
 
 
+async def _read_start(twilio_ws: WebSocket) -> tuple[str | None, str]:
+    """Read Twilio events until `start`; return (stream_sid, scenario_slug).
+
+    The scenario is passed by the dialer as a <Stream> <Parameter>, which Twilio
+    delivers in start.customParameters — this is how the CLI's --scenario choice
+    reaches the (separate) server process.
+    """
+    while True:
+        raw = await twilio_ws.receive_text()
+        msg = json.loads(raw)
+        event = msg.get("event")
+        if event == "start":
+            stream_sid = msg["start"]["streamSid"]
+            params = msg["start"].get("customParameters") or {}
+            slug = params.get("scenario", scenarios.DEFAULT_SCENARIO)
+            logger.info("stream started: %s (scenario=%s)", stream_sid, slug)
+            return stream_sid, slug
+        if event == "stop":
+            return None, scenarios.DEFAULT_SCENARIO
+
+
 async def run_bridge(twilio_ws: WebSocket) -> None:
     """Bridge one Twilio media stream to one OpenAI Realtime session."""
     openai_ws = await realtime.connect()
-    # Configure the session immediately. NO response.create — listen-first.
-    await openai_ws.send(json.dumps(realtime.session_update_payload()))
 
-    # streamSid arrives in Twilio's `start` event; outbound frames need it.
-    state: dict[str, str | None] = {"stream_sid": None}
-    started = asyncio.Event()
+    # Pre-roll: learn streamSid + scenario from Twilio's `start` BEFORE we
+    # configure the OpenAI session, so we load the right patient persona.
+    try:
+        stream_sid, slug = await _read_start(twilio_ws)
+    except (WebSocketDisconnect, websockets.ConnectionClosed):
+        await openai_ws.close()
+        return
+    if stream_sid is None:  # stopped before it started
+        await openai_ws.close()
+        return
+
+    state: dict[str, str | None] = {"stream_sid": stream_sid}
+    scenario = scenarios.get_scenario(slug)
+
+    # Configure the session with the scenario persona. NO response.create —
+    # listen-first: the agent greets first and server-VAD picks that up.
+    await openai_ws.send(
+        json.dumps(realtime.session_update_payload(scenario.instructions))
+    )
 
     async def twilio_to_openai() -> None:
         """Twilio frames -> OpenAI input buffer."""
@@ -47,11 +82,7 @@ async def run_bridge(twilio_ws: WebSocket) -> None:
                 raw = await twilio_ws.receive_text()
                 msg = json.loads(raw)
                 event = msg.get("event")
-                if event == "start":
-                    state["stream_sid"] = msg["start"]["streamSid"]
-                    started.set()
-                    logger.info("stream started: %s", state["stream_sid"])
-                elif event == "media":
+                if event == "media":
                     await openai_ws.send(
                         json.dumps(
                             {

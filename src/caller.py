@@ -8,6 +8,7 @@ Hard invariant: this harness may only ever dial the allowlisted test agent.
 from __future__ import annotations
 
 import logging
+from urllib.parse import quote
 
 from twilio.rest import Client
 
@@ -16,8 +17,12 @@ from .config import ALLOWED_NUMBERS, settings
 logger = logging.getLogger("caller")
 
 
-def place_call() -> str:
-    """Place one outbound call to the allowlisted target. Returns the call SID."""
+def place_call(scenario: str) -> str:
+    """Place one outbound call to the allowlisted target. Returns the call SID.
+
+    The scenario slug is forwarded to the server via the TwiML URL query string;
+    the server echoes it into the Media Stream so the bridge loads the persona.
+    """
     if settings.target_number not in ALLOWED_NUMBERS:
         raise RuntimeError(
             f"Refusing to dial {settings.target_number!r}: not in the hardcoded "
@@ -28,7 +33,7 @@ def place_call() -> str:
     call = client.calls.create(
         to=settings.target_number,
         from_=settings.twilio_from_number,
-        url=f"https://{settings.public_hostname}/twiml",
+        url=f"https://{settings.public_hostname}/twiml?scenario={quote(scenario)}",
         method="POST",
         # Minimal Twilio-side recording so a playable, dual-channel recording
         # appears in the Twilio console. (Full capture pipeline is Phase 2.)

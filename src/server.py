@@ -8,10 +8,12 @@ audio bridge.
 from __future__ import annotations
 
 import logging
+from xml.sax.saxutils import quoteattr
 
-from fastapi import FastAPI, WebSocket
+from fastapi import FastAPI, Request, WebSocket
 from fastapi.responses import PlainTextResponse
 
+from . import scenarios
 from .bridge import run_bridge
 from .config import settings
 
@@ -26,16 +28,20 @@ def health() -> dict:
 
 
 @app.api_route("/twiml", methods=["GET", "POST"])
-def twiml() -> PlainTextResponse:
+def twiml(request: Request) -> PlainTextResponse:
     """Outbound TwiML: open a bidirectional Media Stream to /media-stream.
 
     <Connect> is bidirectional and blocks the call until the websocket closes —
-    which is how the bridge's duration cap / teardown ends the call.
+    which is how the bridge's duration cap / teardown ends the call. The chosen
+    scenario rides along as a <Parameter> so the bridge can load its persona.
     """
+    scenario = request.query_params.get("scenario", scenarios.DEFAULT_SCENARIO)
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>'
         "<Response><Connect>"
-        f'<Stream url="wss://{settings.public_hostname}/media-stream"/>'
+        f'<Stream url="wss://{settings.public_hostname}/media-stream">'
+        f"<Parameter name=\"scenario\" value={quoteattr(scenario)}/>"
+        "</Stream>"
         "</Connect></Response>"
     )
     return PlainTextResponse(content=xml, media_type="text/xml")

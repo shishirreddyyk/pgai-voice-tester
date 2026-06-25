@@ -1,0 +1,23 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi, no, this is Morgan Ellis. I'd like to book an appointment for this Saturday.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:17] PATIENT: It's for myself, so can we do this Saturday around 10 a.m.?
+[00:20] AGENT: Thanks for letting me know, Morgan.
+[00:21] AGENT: Are you calling to book this appointment for yourself or for someone else?
+[00:30] PATIENT: Sure, it's May 4th, 1988, so can we lock in Saturday at 10 a.m.?
+[00:32] AGENT: Please provide your date of birth.
+[00:40] PATIENT: Let's just go with my name and date of birth, Morgan Ellis, May 4th, 1988, so can we confirm that Saturday slot at 10 a.m.?
+[00:44] AGENT: Would you like me to look up your record using your phone number?
+[00:47] AGENT: If so, please provide the number you have on file with us.
+[00:50] AGENT: If you're not sure, I can confirm your name and date of birth again instead.
+[01:03] PATIENT: Actually, I prefer to get the appointment set now. Can we confirm something for this Saturday at 10 a.m.?
+[01:08] AGENT: I can't proceed further right now, but I can make sure our clinic support team follows up with you.
+[01:12] AGENT: Would you like me to have someone from our team contact you to help with booking your appointment?
+[01:24] PATIENT: Understood. Thanks for your help. Goodbye.
+[01:26] AGENT: I'm unable to book the appointment directly right now, but I'll connect you to our patient support team so they can help you right away.
+[01:33] AGENT: Please stay on the line while I transfer your call.
+[01:36] AGENT: Connecting you to a representative.
+[01:38] AGENT: Please wait.
+[01:40] AGENT: Hello, you've reached the Pretty Good AI test line.
+[01:43] AGENT: Goodbye.

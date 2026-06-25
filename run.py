@@ -23,6 +23,11 @@ def main() -> None:
         action="store_true",
         help="place one outbound call to the allowlisted test agent",
     )
+    parser.add_argument(
+        "--scenario",
+        default=None,
+        help="scenario slug to run (default: baseline newpatient-morning)",
+    )
     args = parser.parse_args()
 
     if not args.call:
@@ -32,14 +37,21 @@ def main() -> None:
     # Imported here so --help works without a fully populated .env.
     from src.caller import place_call
     from src.capture import capture_call
-    from src.realtime import SCENARIO_NAME
+    from src.scenarios import DEFAULT_SCENARIO, get_scenario
 
-    sid = place_call()
-    print(f"Call placed: {sid}")
+    slug = args.scenario or DEFAULT_SCENARIO
+    # Validate before dialing so a typo fails fast (lists valid slugs).
+    try:
+        scenario = get_scenario(slug)
+    except KeyError as e:
+        raise SystemExit(str(e).strip('"'))
+
+    sid = place_call(slug)
+    print(f"Call placed: {sid}  (scenario: {scenario.slug} — {scenario.title})")
     print("Make sure `uvicorn src.server:app --port 8000` and ngrok are running.")
     print("Waiting for the call to finish, then pulling recording + transcript...")
 
-    result = capture_call(sid, SCENARIO_NAME)
+    result = capture_call(sid, slug)
     if not result:
         print("No recording was captured — check the Twilio console.")
         return
