@@ -1,0 +1,33 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi, I'd like to book an appointment, please.
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:17] AGENT: Can you please provide your date of birth?
+[00:20] PATIENT: Sure, it's March 12, 1990.
+[00:27] AGENT: Thanks. Are you an existing patient, or is this your first visit with us?
+[00:32] PATIENT: I'm an existing patient. Can we go ahead and set up that appointment?
+[00:39] AGENT: Of course. What is the main reason for your visit?
+[00:42] AGENT: Are you coming in for a routine checkup, a follow-up, something urgent, or another reason?
+[00:49] PATIENT: It's for a follow-up. Let's get that booked.
+[00:54] AGENT: Do you have a specific provider you'd like to see, or are you open to the first available?
+[01:00] PATIENT: I'm open to the first available. When's the next open slot?
+[01:06] AGENT: Let me check the next available appointment for a follow-up. One moment.
+[01:11] PATIENT: Sure, thanks.
+[01:14] AGENT: I'll have those options for you in just a moment.
+[01:17] AGENT: We have openings for follow-up visits this week and early next week.
+[01:21] AGENT: Do you have a preferred day or time of day, like morning or afternoon?
+[01:26] PATIENT: Afternoons are best for me. What's the earliest afternoon slot available?
+[01:32] AGENT: The earliest afternoon slot is Thursday, June 25th at 1 p.m. with Carl Mentz, PT.
+[01:38] AGENT: Would you like to book that?
+[01:41] PATIENT: Yes, let's go ahead and book that one, please.
+[01:47] AGENT: Your appointment is set for tomorrow, Thursday, June 25th at 1 p.m. with Carl Mentz, PT at Pivot Point Orthopedics.
+[01:57] AGENT: Please bring your photo ID, insurance card, a list of your current medications, and any imaging disks you have.
+[02:04] AGENT: Would you like a text message with these details?
+[02:07] PATIENT: No, that's fine. Thanks for your help. I'll be there.
+[02:25] AGENT: You're all set for your appointment.
+[02:27] AGENT: If you need to make any changes, just give us a call.
+[02:30] AGENT: We'll see you tomorrow.
+[02:32] PATIENT: Thanks, will do. Bye now.
+[02:37] AGENT: Take care.
+[02:38] PATIENT: You, too. Goodbye.

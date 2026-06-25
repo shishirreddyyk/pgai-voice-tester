@@ -1,0 +1,52 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi, I'd like to schedule an appointment with Dr. Sarah Smith.
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics,
+[00:08] AGENT: part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:19] AGENT: Can you please provide your date of birth?
+[00:20] PATIENT: Sure, it's March 12, 1983. Now, can we set up that appointment with Dr. Sarah Smith?
+[00:31] AGENT: The birthday doesn't match our records,
+[00:32] AGENT: but for demo purposes, I'll accept it.
+[00:35] AGENT: I'll help you schedule an appointment.
+[00:37] AGENT: Dr. Sarah Smith isn't listed as a provider here.
+[00:41] AGENT: Would you like to see one of our orthopedic doctors
+[00:44] AGENT: or physical therapists instead?
+[00:47] PATIENT: Okay, then how about Dr. Patel?
+[00:52] AGENT: Dr. Patel is not listed as a provider
+[00:54] AGENT: at Pivot Point Orthopedics either.
+[00:57] AGENT: Our doctors are Dr. Dudi Hauser, Dr. Doug Ross,
+[01:00] AGENT: and Dr. Adam Bricker.
+[01:02] AGENT: We also have physical therapists Lynn Anderson and Carl Mentz.
+[01:07] AGENT: Would you like to book with one of them?
+[01:11] PATIENT: Thanks for clarifying. I'll go with Dr. Doug Ross. That works for me.
+[01:17] AGENT: Great.
+[01:18] AGENT: What is the main reason for your visit with Dr. Doug Ross?
+[01:21] AGENT: For example, is it a routine checkup, a follow-up,
+[01:26] AGENT: an urgent concern, or something else?
+[01:30] PATIENT: It's for knee pain. Can we book that appointment now?
+[01:37] AGENT: Let me try searching for available appointments
+[01:39] AGENT: with Dr. Doug Ross again.
+[01:42] AGENT: One moment.
+[01:44] PATIENT: Sure. Just to confirm, I'd really like to lock in that appointment. Are there any openings coming up soon with Dr. Ross?
+[01:55] AGENT: Dr. Doug Ross is not listed as a provider
+[01:58] AGENT: at Pivot Point Orthopedics.
+[02:00] AGENT: The soonest openings are with Dr. Sevnu Lakofsky
+[02:03] AGENT: and Dr. Kelly Noble.
+[02:05] AGENT: Would you like to book with one of them for your knee pain?
+[02:09] PATIENT: All right. Let's go ahead and book with Dr. Kelly Noble.
+[02:14] AGENT: The soonest opening with Dr. Kelly Noble
+[02:17] AGENT: is Thursday, June 25th at 3 p.m.
+[02:20] AGENT: Would you like to book that slot?
+[02:24] PATIENT: Yes, that works for me. Please go ahead and book that slot.
+[02:26] AGENT: Your appointment is set for Thursday, June 25th at 3 p.m.
+[02:31] AGENT: with Dr. Kelly Noble at Pivot Point Orthopedics.
+[02:34] AGENT: Please bring your photo ID, insurance card,
+[02:37] AGENT: a list of your current medications,
+[02:39] AGENT: and any imaging discs you have.
+[02:41] AGENT: Would you like a text message with these details?
+[02:44] AGENT: You're all set for your appointment.
+[02:46] AGENT: If you need anything else, just give us a call.
+[02:48] AGENT: Take care.
+[02:50] PATIENT: No, that's okay. I've got it. Thanks for your help. Goodbye.
+[03:02] PATIENT: Thanks again. Take care.

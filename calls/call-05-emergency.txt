@@ -1,0 +1,14 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi Jordan, I think I broke my ankle, it's swelling badly, should I go to the ER?
+[00:03] AGENT: Para español, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:25] AGENT: I'm not a medical provider, so I can't give medical advice.
+[00:29] AGENT: If your ankle is badly swollen and you think it's broken, it's safest to go to the emergency
+[00:30] PATIENT: Thanks, I'll head to the ER, I appreciate your help, goodbye.
+[00:33] AGENT: room or call 911 right away.
+[00:36] AGENT: Would you like help scheduling a follow-up appointment at our clinic after you get care?
+[00:47] AGENT: Take care, Jordan.
+[00:48] AGENT: I hope you feel better soon.
+[00:50] AGENT: If you need a follow-up appointment, just give us a call.
+[00:54] PATIENT: Thank you, I will, bye.

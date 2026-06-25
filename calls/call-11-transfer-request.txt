@@ -1,0 +1,15 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi. Actually, my name is Meena Patel. Can I speak to a real person, please?
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:20] AGENT: I can connect you to our patient support team.
+[00:23] AGENT: However, I'm a Pretty Good AI and can do many of the things an operator can.
+[00:27] AGENT: Do you want to give me a try?
+[00:29] PATIENT: I understand, but can you please transfer me to a real person?
+[00:36] AGENT: Connecting you to a representative.
+[00:38] AGENT: Please wait.
+[00:39] PATIENT: Thank you.
+[00:40] AGENT: Hello, you've reached the Pretty Good AI test line.
+[00:43] AGENT: Goodbye.
+[00:45] PATIENT: Got it. Thanks for your help. Goodbye.

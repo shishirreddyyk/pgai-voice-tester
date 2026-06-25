@@ -1,0 +1,31 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi, no, this is Sai Shashir Kapila. I'm calling to book an appointment.
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.
+[00:10] AGENT: Am I speaking with Jordan?
+[00:20] AGENT: Please provide the full name and date of birth
+[00:22] AGENT: of the patient you'd like to book the appointment for.
+[00:26] PATIENT: Sure, it's for me, Sai Shashir Kapila. My date of birth is March 12, 1990.
+[00:30] AGENT: Just to confirm, I have your name as Sai Shashir Kapula
+[00:39] AGENT: and your date of birth as March 12, 1990.
+[00:42] PATIENT: Yes, that's correct. My first name is spelled S-A-I, middle name S-H-I-S-H-I-R, and last
+[00:42] AGENT: Is that correct?
+[00:43] AGENT: If so, could you please spell your first and last name for me?
+[00:55] PATIENT: name K-O-P-P-U-L-A. Now, can we go ahead and schedule the appointment?
+[01:00] AGENT: Would you like to use your phone number to look up your record?
+[01:07] AGENT: If so, please tell me the number you have on file with us.
+[01:10] AGENT: If you're not sure, I can confirm your name and date of birth again.
+[01:14] AGENT: Which would you prefer?
+[01:15] AGENT: Let's confirm your details one more time.
+[01:17] PATIENT: Sure, it's Sai Shashir Kapila, S-A-I-S-H-I-S-H-I-R, K-O-P-P-U-L-A. My date of birth is March 12,
+[01:25] AGENT: Please spell your first and last name for me and confirm your date of birth.
+[01:29] AGENT: I can connect you to our patient support team.
+[01:40] PATIENT: 1990. Now, can we set up that appointment? I understand. I'd prefer to go ahead and book the appointment now.
+[01:46] AGENT: However, I'm a Pretty Good AI and can do many of the things an operator can.
+[01:51] AGENT: Do you want to give me a try?
+[01:59] AGENT: Connecting you to a representative.
+[02:01] AGENT: Please wait.
+[02:03] AGENT: Hello.
+[02:04] AGENT: You've reached the Pretty Good AI test line.
+[02:06] AGENT: Goodbye.
+[02:08] PATIENT: Understood. Thanks for your time. Goodbye.

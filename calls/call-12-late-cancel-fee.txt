@@ -1,0 +1,25 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:00] PATIENT: Hi, no, this is Sai Shishir Coppola. I need to cancel my appointment this afternoon.
+[00:03] AGENT: Para espanol, oprima el 2.
+[00:06] AGENT: Thanks for calling Pivot Point Orthopedics,
+[00:08] AGENT: part of Pretty Good A.I.
+[00:11] AGENT: Am I speaking with Jordan?
+[00:20] AGENT: Thanks for letting me know, Sai.
+[00:22] AGENT: Are you calling to cancel an appointment for yourself
+[00:24] AGENT: or for someone else?
+[00:27] PATIENT: It's for myself. The appointment is this afternoon. Can you help cancel it?
+[00:31] AGENT: Please provide your date of birth.
+[00:36] PATIENT: Sure. It's January 23, 2003.
+[00:40] AGENT: Just to confirm, can you please spell your first
+[00:42] AGENT: and last name for me?
+[00:47] PATIENT: Sure. First name, Sai. Middle name, Shishir. Last name, Coppola.
+[01:01] AGENT: I'm unable to cancel your appointment right now,
+[01:04] AGENT: but I'll connect you to our patient support team for help.
+[01:07] AGENT: Please stay on the line.
+[01:09] AGENT: Connecting you to a representative?
+[01:11] AGENT: Please wait.
+[01:13] AGENT: Hello.
+[01:14] AGENT: You've reached the Pretty Good A.I.
+[01:16] AGENT: test line.
+[01:17] AGENT: Goodbye.
+[01:17] PATIENT: Wait, before you go, I really need to cancel my appointment. Can you help with that now?
