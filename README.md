@@ -7,6 +7,11 @@ API (speech-to-speech).
 
 See `BUGS.md` for the findings and `ARCHITECTURE.md` for how it works and why.
 
+## Videos
+
+- **Walkthrough** (approach, architecture, bugs): https://www.loom.com/share/d10f631c3e844feeb9e3c6d22dc48c82
+- **Debugging with AI** (iterative problem-solving, prompts shown): https://www.loom.com/share/131be2189e5f4147a9690ba4b8a254c7
+
 ## What it does
 
 1. Places an outbound call from a Twilio number to the PGAI test line.
